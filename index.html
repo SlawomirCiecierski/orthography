@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title> Heeellooo world</title>
+	<meta name=description" content="nauka html">
+	<meta name="keywords" content="html">
+	<meta name="author" content="Sławomir Ciecierski">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+//=======================================================================
+function myCheck()
+{
+//TODO utworzyć tablicę [25] z odpowiedziami
+const asn = ["rz", "ż", "ż", "ó", "ó", "rz", "rz", "u", "h","H", "rz", "ó", "ż", "rz", "rz", "ż", "ó", "ó", "ó", "u", "ż", "ó", "rz", "rz", "h"];
+var licznik;
+var nazwaTxt;
+licznik=0;
+
+//alert (nazwaTxt); ok
+while(licznik < 25)
+		{
+			
+		nazwaTxt=('t'+licznik);
+		//alert (nazwaTxt); ok
+		//licznik=(licznik+1);
+		//alert (licznik); ok
+
+		var v = document.getElementById(nazwaTxt).value;
+		var l = asn[licznik];
+
+			if (v === l)
+			{
+				//alert (nazwaTxt); not
+				document.getElementById(nazwaTxt).style.color="green";
+				document.getElementById(nazwaTxt).value = asn[licznik];
+			}
+				else
+			{  
+				document.getElementById(nazwaTxt).style.color="red";
+				document.getElementById(nazwaTxt).value = asn[licznik];
+			}
+		//alert (licznik)
+		licznik=(licznik+1);
+		//alert (nazwaTxt); 
+		}
+//alert ("lklklk   "+licznik);
+}
+
+
+function reset()
+{
+		
+	/*
+	document.getElementByID("selectLeft")=0;
+	document.getElementById("selectRight")=0;
+	document.getElementById("txtInput").Value="";
+	document.getElementById("txtOutput").Value="";
+	document.getElementById("btnWynik").disabled=false;
+	*/
+}
+//=======================================================================
+
+</script>
+
+
+	</head>
+	
+			<body>
+
+<!--form action="index.html" method="get">-->
+
+
+			<div style="position: absolute; text-align: center; top: 0px; left: 0px; width: 100%; height: 100%;z-index: 1;background-color: transparent;">
+    				<div style="display:table; overflow: hidden; width:100%; height:100%;">
+					 <div style="display:table-cell; overflow: hidden; vertical-align: middle;">
+			
+
+<table align="center" width='50%'>
+
+	<tr align="center" valign="top">
+<td colspan="1" align="center">
+			<h1>DYKTANDO</h1>
+<h3>
+Nagle K<input type="text" id="t0" placeholder="  "/></label>yś 
+<input type="text" id="t1" placeholder="  "/></label>wawo 
+wybiegł na ośnie<input type="text" id="t2" placeholder="  "/></label>ony 
+pr<input type="text" id="t3" placeholder="  "/></label>g i 
+wr<input type="text" id="t4" placeholder="  "/></label>cił zaraz z garścią śniegu. 
+W koryta<input type="text" id="t5" placeholder="  "/></label>u 
+zaw<input type="text" id="t6" placeholder="  "/></label>ało jak w 
+<input type="text" id="t7" placeholder="  "/></label>lu , 
+gdy <input type="text" id ="t8" placeholder="  "/></label>ltaj 
+<input type="text" id="t9" placeholder="  "/></label>enryk 
+<input type="text" id="t10" placeholder="  "/></label>ucił na 
+st<input type="text" id="t11" placeholder="  "/></label>ł 
+śnie<input type="text" id="t12" placeholder="  "/></label>kę. 
+T<input type="text" id="t13" placeholder="  "/></label>eba 
+rozst<input type="text" id="t14" placeholder="  "/></label>ygnąć 
+nale<input type="text" id="t15" placeholder="  "/></label>ycie toczący się 
+sp<input type="text" id="t16" placeholder="  "/></label>r i przyznać rację temu, 
+kto m<input type="text" id="t17" placeholder="  "/></label>wi z rozsądkiem. 
+Po si<input type="text" id="t18" placeholder="  "/></label>dmej lekcji 
+zn<input type="text" id="t19" placeholder="  "/></label><input type="text" id="t20" placeholder="  "/></label>ony 
+wl<input type="text" id="t21" placeholder="  "/></label>kł się do domu. 
+Wyda<input type="text" id="t22" placeholder="  "/></label>enia szkolne miały 
+nieko<input type="text" id="t23" placeholder="  "/></label>ystny wpływ na jego 
+<input type="text" id="t24" placeholder="  "/></label>umor.
+</h3>
+
+<button id="btnShow" type="submit" onclick="myCheck()">O B L I C Z</button>
+</td>
+	</tr>
+	
+
+
+</table>
+			
+					</div>
+				</div>
+			</div>
+
+<!--</form>-->
+
+<div style="position: absolute; text-align: center; top: 0px; left: 0px; width: 100%; height: 100%; z-index: -1; opacity: 0.5; background-color: transparent;">
+    <div style="display:table; overflow: hidden; width:100%; height:100%;">
+        <div style="display:table-cell; overflow: hidden; vertical-align: middle; ">
+            <span style="color: white; font-size: 240px; text-shadow: 2px 2px 4px black;" id='txtTlo' >
+				Mistrz ortografii  
+			</span>
+        </div>
+	</div>
+</div>
+
+
+			</body>
+</html>

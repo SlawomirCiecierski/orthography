@@ -1,0 +1,11 @@
+input
+{
+width: 25px;
+font-family: "Times New Roman", Times, serif;
+font-size: 20px;
+text-align: center;
+}
+table
+{
+border: 3px #000 solid;
+}
